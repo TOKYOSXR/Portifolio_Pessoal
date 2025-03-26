@@ -105,7 +105,7 @@ main {
 }
 
 .botao:hover {
-    background-color: #6a0dad;
+    border-color: #6a0dad;
     transform: scale(1.1);
 }
 
@@ -252,6 +252,104 @@ main {
 .card-btn.four {
     background: linear-gradient(to left, var(--card3-gradient-color1), var(--card2-gradient-color1));
 }
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+#projetos h2 {
+    font-family: var(--font-titulo);
+    font-size: 2vw;
+    margin-bottom: 5rem;
+}
+.container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 38px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .banner-image {
+    background-image:url('../imagens/car.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255);
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .banner-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .wrapper h1 {
+    font-family: var(--font-titulo);
+    color: rgba(255,255,255,0.98);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  
+ .wrapper p {
+    color: #fff;
+    font-family: var(--font-text);
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 2px;  
+    cursor: pointer;
+  }
+  
+  
+  .fill {
+    background: transparent;
+    color: rgba(255,255,255,0.95);
+    filter: drop-shadow(0);
+    font-family: var(--font-text);
+    font-weight: bold;
+    transition: all .3s ease; 
+    border: #d3d3d3 solid 1px;
+  }
+  
+  .fill:hover{
+    transform: scale(1.125);  
+    border-color: #6a0dad;
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+    transition: all .3s ease;    
+  }
 
 #contato {
     display: flex;
