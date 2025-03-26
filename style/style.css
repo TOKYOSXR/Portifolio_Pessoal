@@ -88,7 +88,7 @@ main {
     margin-bottom: 2rem;
 }
 
-.apresentacao img {
+#apresentacao img {
     height: 40%;
     width: 40%;
 }
@@ -152,6 +152,7 @@ main {
     flex-direction: row;
     gap: 2rem;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .card-wrap {
@@ -271,6 +272,7 @@ main {
     align-items: center;
     gap: 7rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 #contato li {
