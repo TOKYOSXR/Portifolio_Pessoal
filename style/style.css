@@ -1,18 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    
+
 }
-html{
-    background: linear-gradient(135deg, #000000, #6a0dad);
+
+html {
+    background-color: #0D0C17;
     color: #d3d3d3;
 }
 
-:root{
-    --font-text:"Space Mono", monospace;
-    --font-titulo:"Poppins", sans-serif;
+:root {
+    --font-text: "Space Mono", monospace;
+    --font-titulo: "Poppins", sans-serif;
+    --color-text: #616161;
+    --color-text-btn: #ffffff;
+    --card1-gradient-color1: #f12711;
+    --card1-gradient-color2: #f5af19;
+    --card2-gradient-color1: #7F00FF;
+    --card2-gradient-color2: #E100FF;
+    --card3-gradient-color1: #3f2b96;
+    --card3-gradient-color2: #a8c0ff;
+    --card4-gradient-color1: #11998e;
+    --card4-gradient-color2: #38ef7d;
 }
 
 .hero {
@@ -21,6 +33,206 @@ html{
     padding: 1rem;
     font-family: var(--font-text);
     font-size: large;
-    
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 2px;
+    border-color: #9B59B6;
 }
 
+main {
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-titulo);
+    font-size: 2vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.apre h1 {
+    max-width: 20ch;
+}
+
+.meu-nome {
+    color: #6a0dad;
+}
+
+.apre h2 {
+    font-family: var(--font-text);
+    font-size: 1.4vw;
+    margin-bottom: 2rem;
+}
+
+.apresentacao img {
+    height: 40%;
+    width: 40%;
+}
+
+.botao {
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #6a0dad;
+    transform: scale(1.1);
+}
+
+.botao a {
+    color: #d3d3d3;
+    text-decoration: none;
+
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+
+    margin-bottom: 6rem;
+}
+
+.sobre-mim h2 {
+    font-family: var(--font-titulo);
+    font-size: 2vw;
+}
+
+.sobre-mim p {
+    font-family: var(--font-text);
+    color: #666666;
+    max-width: 80ch;
+}
+
+.Habilidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Habilidades h2 {
+    font-family: var(--font-titulo);
+    font-size: 2vw;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.card-wrap {
+    width: 220px;
+    background: #fff;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    color: var(--color-text);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.card-wrap:hover {
+    transform: scale(1.1);
+}
+
+.card-header {
+    height: 200px;
+    width: 100%;
+    background: red;
+    border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.card-header i {
+    color: #fff;
+    font-size: 72px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25ch;
+    margin: 0 auto;
+}
+
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-titulo);
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.card-text {
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--font-text);
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    border: none;
+    border-radius: 100px;
+    padding: 5px 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-header.one {
+    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+.card-header.two {
+    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+.card-header.three {
+    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+.card-header.four {
+    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+.card-btn.one {
+    background: linear-gradient(to left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+.card-btn.two {
+    background: linear-gradient(to left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+.card-btn.three {
+    background: linear-gradient(to left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+.card-btn.four {
+    background: linear-gradient(to left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>Código, Criatividade e Inovação: Meu Portfólio de Desenvolvimento Web</title>
 </head>
@@ -17,13 +18,13 @@
     <main>
         <section class="apresentacao">
             <div class="apre">
-                <h1>Olá, seja bem vindo!!</h1>
+                <h1>Olá, seja bem vindo!</h1>
                 <h1><span class="meu-nome">Sou o Juscelino</span></h1>
                 <h2>Desenvolvedor Full Stack</h2>
 
-                <div class="botao">
-                    <button>Entrar em contato</button>
-                </div>
+                <button class="botao">
+                    <a href="#contato">Entrar em contato</a>
+                </button>
             </div>
 
             <img src="imagens/Gengar_Grinning_A_Pokémon_Character_With_A_Mischievous_Smile___TopPNG-removebg-preview.png"
@@ -40,21 +41,62 @@
         </section>
 
         <section class="Habilidades">
-            <div class="card-habilidade">
-                <h3>Java</h3>
-                <img src="imagens/java.svg" alt="logo java">
+            <h2>Habilidades</h2>
+            <div class="cards">
+                <div class="card-wrap">
+                    <div class="card-header one">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-title">Java</h1>
+                        <p class="card-text">O Java foi minha primeira linguagem no curso de Análise e Desenvolvimento
+                            de Sistemas, e estou aprendendo rapidamente e obtendo bons resultados.</p>
+                        <button class="card-btn one">code</button>
+                    </div>
+                </div>
+
+                <div class="card-wrap">
+                    <div class="card-header one">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-title">CSS</h1>
+                        <p class="card-text">O CSS melhorou minhas habilidades em front-end, ajudando a controlar o
+                            estilo e layout das páginas de forma eficiente. Entendi rapidamente suas regras, o que
+                            acelerou meu aprendizado.
+                        </p>
+                        <button class="card-btn one">code</button>
+                    </div>
+                </div>
+
+                <div class="card-wrap">
+                    <div class="card-header one">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-title">HTML</h1>
+                        <p class="card-text">O HTML foi meu primeiro contato com o front-end, e desde então, tenho
+                            facilidade nessa área, o que tornou o aprendizado de outras tecnologias, como CSS e
+                            JavaScript, mais rápido.
+                        </p>
+                        <button class="card-btn one">code</button>
+                    </div>
+                </div>
+
+                <div class="card-wrap">
+                    <div class="card-header one">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-title">JavaScript</h1>
+                        <p class="card-text">Estou estudando JavaScript, mas estou tendo algumas dificuldades. Apesar
+                            disso, continuo tentando entender melhor a lógica da linguagem e sua aplicação no
+                            desenvolvimento web
+                        </p>
+                        <button class="card-btn one">code</button>
+                    </div>
+                </div>
             </div>
-            <div class="card-habilidade">
-                <h3>HTML</h3>
-                <img src="imagens/597-5977496_html5-logo-png.png" alt="logo HTML">
-            </div>
-            <div class="card-habilidade">
-                <h3>CSS</h3>
-                <img src="imagens/css.png" alt="logo CSS">
-            </div>
-            <div class="card-habilidade">
-                <h3>JavaScript</h3>
-                <img src="imagens/javaScript.png" alt="logo JavaScript">
             </div>
 
         </section>
@@ -63,7 +105,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contato">
         <h1>Contato</h1>
         <ul>
             <li>
