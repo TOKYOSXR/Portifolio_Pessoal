@@ -17,14 +17,8 @@ html {
     --font-titulo: "Poppins", sans-serif;
     --color-text: #616161;
     --color-text-btn: #ffffff;
-    --card1-gradient-color1: #f12711;
-    --card1-gradient-color2: #f5af19;
     --card2-gradient-color1: #7F00FF;
-    --card2-gradient-color2: #E100FF;
     --card3-gradient-color1: #3f2b96;
-    --card3-gradient-color2: #a8c0ff;
-    --card4-gradient-color1: #11998e;
-    --card4-gradient-color2: #38ef7d;
 }
 
 .hero {
@@ -55,7 +49,7 @@ main {
     font-family: var(--font-titulo);
     font-size: 2vw;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .apre h1 {
@@ -104,8 +98,7 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 1vw;
-
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 }
 
 .sobre-mim h2 {
@@ -123,6 +116,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10rem;
 }
 
 .Habilidades h2 {
@@ -132,10 +126,9 @@ main {
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: auto;
-    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
@@ -235,4 +228,60 @@ main {
 
 .card-btn.four {
     background: linear-gradient(to left, var(--card3-gradient-color1), var(--card2-gradient-color1));
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+}
+
+#contato h1 {
+    font-family: var(--font-titulo);
+    font-size: 2vw;
+}
+
+#contato ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7rem;
+    margin-bottom: 1rem;
+}
+
+#contato li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--font-text);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#contato li:hover {
+    transform: scale(1.2);
+  }
+
+#contato i {
+    font-size: 2rem;
+    color: #6a0dad;
+    border: solid 2px #6a0dad;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+#contato p {
+    font-family: var(--font-text);
+}
+
+#contato a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+#contato a:hover {
+    text-decoration: underline;
 }
