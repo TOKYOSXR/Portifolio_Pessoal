@@ -407,3 +407,76 @@ main {
 #contato a:hover {
     text-decoration: underline;
 }
+
+/*width 375 - 425 - 768 - 1024 - 1440*/
+
+@media(max-width: 1024px) {
+
+    .hero nav {
+        display: none;
+    }
+
+    .hero img{
+        display: none;
+    }
+
+    #apresentacao {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #apresentacao img {
+        width: 100%;
+        height: auto;
+    }
+
+    #apresentacao h1 {
+        font-size: 8vw;
+    }
+
+    #apresentacao h2 {
+        font-size: 4vw;
+    }
+
+    #apresentacao button {
+        font-size: 3vw;
+    }
+
+   .apre{
+       text-align: center;
+   }
+
+   #sobre-mim h2 {
+    font-size: 5vw;
+   }
+
+   #Habilidades h2 {
+    font-size: 5vw;
+   }
+
+   #Habilidades.card{
+    width: 100%;
+    height: auto;
+    align-items: center;
+   }
+
+   #projetos h2 {
+    font-size: 5vw;
+   }
+
+   #contato h1 {
+    font-size: 5vw;
+   }
+
+   #contato ul {
+    gap: 3rem;
+    justify-content: center;
+    flex-direction: column;
+   }
+
+   #contato i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+   }
+
+}
