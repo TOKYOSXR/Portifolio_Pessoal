@@ -431,11 +431,11 @@ main {
     }
 
     #apresentacao h1 {
-        font-size: 8vw;
+        font-size: 1.5rem;
     }
 
     #apresentacao h2 {
-        font-size: 4vw;
+        font-size: 1rem;
     }
 
     #apresentacao button {
@@ -447,11 +447,14 @@ main {
    }
 
    #sobre-mim h2 {
-    font-size: 5vw;
+    font-size: 2rem;
    }
 
+   #sobre-mim p {
+    text-align: center;
+   }
    #Habilidades h2 {
-    font-size: 5vw;
+    font-size: 2rem;
    }
 
    #Habilidades.card{
@@ -461,11 +464,11 @@ main {
    }
 
    #projetos h2 {
-    font-size: 5vw;
+    font-size: 2rem;
    }
 
    #contato h1 {
-    font-size: 5vw;
+    font-size: 2rem;
    }
 
    #contato ul {
@@ -477,6 +480,10 @@ main {
    #contato i {
     font-size: 1.5rem;
     padding: 0.5rem;
+   }
+
+   .container h1{
+    font-size: 2rem;
    }
 
 }
